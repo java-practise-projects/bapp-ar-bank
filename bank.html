@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <!-- tailwid added -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-7xl  mt-10 text-center">Let's get some
+            <span class="font-extrabold text-violet-600">Moooooooney!!!</span> </h1>
+      </header>
+      <main>
+        <section class="grid grid-cols-3 gap-5 w-9/12 mx-auto">
+            <div class="box bg-green-500 w-96 p-8 text-white rounded-lg mt-24">
+                <h1  class="text-4xl font-semibold ">Deposit</h1>
+                <h1  class="text-7xl font-semibold ">$<span id="depositDisplay">00</span></h1>
+            </div>
+            <div class="box bg-red-500 w-96 p-8 text-white rounded-lg mt-24">
+                <h1  class="text-4xl font-semibold ">Withdraw</h1>
+                <h1  class="text-7xl font-semibold ">$<span id="withdrawDisplay" >00</span> </h1>
+            </div>
+            <div class="box bg-yellow-500 w-96 p-8 text-white rounded-lg mt-24">
+                <h1  class="text-4xl font-semibold ">Balance</h1>
+                <h1  class="text-7xl font-semibold ">$<span id="balanceDisplay">1240</span> </h1>
+            </div>
+           
+        </section>
+        <!-- ibput section -->
+        <section class="grid grid-cols-2 gap-5 w-9/12 mx-auto">
+            <div class="box bg-indigo-500  p-8  rounded-lg mt-24">
+                <h1  class="text-5xl font-semibold  text-white">Please Deposit</h1>
+                <input type="text"  id="depositInput" class="px-3 w-9/12 mt-4 mb-4 block p-2 rounded-lg" placeholder="Please type the ammount ">
+                <input type="submit" value="Deposit" id="depositBtn" class="bg-green-600  font-medium text-white rounded-lg px-8 py-3 text-2xl hover:bg-sky-400 hover:cursor-pointer ">
+            </div>
+            
+            <div class="box bg-violet-500  p-8  rounded-lg mt-24">
+                <h1  class="text-5xl font-semibold text-white ">Please Withdraw</h1>
+                <input type="text"  id="withdrawInput" class="px-3 w-9/12 mt-4 mb-4 block p-2 rounded-lg" placeholder="Please type the ammount ">
+                <input type="submit" value="Withdraw" id="withdrawBtn" class="bg-rose-600  font-medium text-white rounded-lg px-8 py-3 text-2xl hover:bg-amber-600 hover:cursor-pointer ">
+            </div>
+            
+        </section>    
+       
+      </main>
+      <script src="js/bank.js"></script>
+      <script src="js/withdraw.js"></script>
+    
+</body>
+</html>
